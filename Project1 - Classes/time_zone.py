@@ -3,7 +3,6 @@ import numbers
 from datetime import timedelta
 
 class TimeZone:
-    
     def __init__(self, name, offset_hours, offset_minutes):
         if name is None or len(str(name).strip()) == 0:
             raise ValueError("It is required to pass a non empty name.")
